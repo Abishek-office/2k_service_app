@@ -132,11 +132,6 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
-            name="PaymentOneOrder"
-            component={PaymentOneOrder}
-            options={() => ({header: () => <TopNavigate />})}
-          />
-          {/* <Stack.Screen
             name="LoginScreen"
             component={LoginScreen}
             options={{header: () => null}}
@@ -172,7 +167,7 @@ export default function App() {
             name="PaymentOneServiceScreen"
             component={PaymentOneServiceScreen}
             options={() => ({header: () => <TopNavigate />})}
-          /> */}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>

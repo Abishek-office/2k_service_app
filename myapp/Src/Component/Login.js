@@ -32,7 +32,7 @@ export default function Login({handleNavigate}) {
         source={require('../assets/cover.png')}>
         <View style={styles.image_text}>
           <ImageBackground
-            style={{height: 190, width: 190}}
+            style={styles.logo}
             source={require('../assets/logo-2k.png')}
           />
           <Text style={styles.input_logo_field}>2k Service</Text>
@@ -133,6 +133,10 @@ const styles = StyleSheet.create({
     width: 300,
     height: 43,
     padding: 10,
+  },
+  logo: {
+    height: 190,
+    width: 190,
   },
   login_div: {
     // backgroundColor: 'black',
