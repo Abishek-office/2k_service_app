@@ -123,6 +123,7 @@ import OrderScreen from './Src/Pages/OrderScreen';
 import BeforePaymentOrder from './Src/Component/BeforePaymentOrder';
 import PaymentOneOrder from './Src/Component/PaymentOneOrder';
 import PaymentOneService from './Src/Component/PaymentOneService';
+import FirstInvoiceScreen from './Src/Pages/FirstInvoiceScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -131,7 +132,7 @@ export default function App() {
     <SafeAreaView style={{flex: 1}}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen
+          {/* <Stack.Screen
             name="LoginScreen"
             component={LoginScreen}
             options={{header: () => null}}
@@ -166,6 +167,11 @@ export default function App() {
           <Stack.Screen
             name="PaymentOneServiceScreen"
             component={PaymentOneServiceScreen}
+            options={() => ({header: () => <TopNavigate />})}
+          /> */}
+          <Stack.Screen
+            name="FirstInvoiceScreen"
+            component={FirstInvoiceScreen}
             options={() => ({header: () => <TopNavigate />})}
           />
         </Stack.Navigator>
